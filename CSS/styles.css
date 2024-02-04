@@ -1,0 +1,101 @@
+
+h2 {
+  text-align: center;
+  font-size: 28px; 
+  color: #333; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    background-color: #ac1919;
+    padding: 10px 5px;
+    margin: 0px;
+  }
+  
+  .menu-item {
+    margin-right: 20px; /* Espacio entre todos los elementos del menú */
+  }
+  .menu-item-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item-link:hover {
+    color: #000000; /* Color al pasar el ratón por encima */
+  }
+
+  body {
+    background-color: #7acba5; 
+   
+  }
+  
+
+  .logo {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; /* Hace que el contenedor sea redondo */
+    overflow: hidden; /* Oculta partes del logo que sobrepasen el contenedor */
+    margin-top: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; /* Alinea el contenido al centro */
+  }
+  
+  .logo img {
+    width: 100%; /* Ajusta el tamaño del logo al contenedor redondo */
+    height: auto;
+    border-radius: 50%; /* Hace que la imagen dentro del contenedor sea redonda también */
+  }
+  
+  .algunos-productos {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  
+  .algunos-productos img {
+    width: 200px; /* Ajusta el ancho deseado para las imágenes */
+    height: auto;
+    margin-right: 175px; 
+  }
+
+  .image-container {
+    display: flex;
+  }
+  
+  .image-with-description {
+    text-align: center;
+    margin-right: 10px; /* Espacio entre las imágenes */
+    display: flex;
+    flex-direction: column; /* Coloca el texto debajo de la imagen */
+  }
+  
+  .image-with-description img {
+    max-width: 200px; /* Ancho máximo de la imagen */
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .image-with-description .descripcion {
+    font-size: 14px; 
+    color: #333; 
+    max-width: 200px; /* Ancho máximo del texto para coincidir con el de la imagen */
+    margin-left: 1px;
+    margin-right: auto;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  .footer-section{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
