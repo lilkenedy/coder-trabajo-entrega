@@ -11,7 +11,7 @@ header {
 }
 
 .nav-link:hover {
-  color:blue
+  color: blue
 }
 
 .carousel-item img {
@@ -22,8 +22,56 @@ header {
   margin-right: auto;
 }
 
-.nosotros{
+.nosotros {
   text-align: justify;
   line-height: 1.5em;
 }
 
+.side-img-gatito {
+  height: 500px !important;
+  width: 100%;
+}
+
+/* clases de mobile van aca*/
+@media (max-width: 1024px) {
+  .direccion-responsive {
+    display: block !important;
+  }
+}
+
+
+
+
+.centrado-only {
+  width: fit-content;
+  margin: auto !important;
+}
+
+@media (min-width: 1024px) {
+  .direccion-responsive {
+    display: flex !important;
+  }
+}
+
+.margen-card {
+  margin: 20px;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+.size-img-card{
+  height: 200px;
+  width: 100%;
+}
+
+.card-flex-content{
+  flex: 1 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+}
+
+.bg-arrow{
+  background-color: #000;
+  border-radius: 50px;
+}
