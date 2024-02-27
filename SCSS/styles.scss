@@ -1,15 +1,24 @@
+// Definición de variables
+$color-primary: #ffc107;
+$color-hover: blue;
+
+// Estilos para el logo
 .logo {
   width: 90px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 50%; // Ajusta el tamaño del logo al contenedor redondo
 }
 
+// Estilos para el encabezado
 header {
-  background-color: #ffc107;
+  background-color: $color-primary;
 }
 
-.nav-link:hover {
-  color: blue;
+// Estilos para los enlaces de navegación al pasar el ratón por encima
+.nav-link {
+  &:hover {
+    color: $color-hover;
+  }
 }
 
 .carousel-item img {
@@ -36,6 +45,10 @@ header {
     display: block !important;
   }
 }
+
+
+
+
 .centrado-only {
   width: fit-content;
   margin: auto !important;
@@ -46,6 +59,7 @@ header {
     display: flex !important;
   }
 }
+
 .margen-card {
   margin: 20px;
 }
@@ -70,6 +84,8 @@ p {
   border-radius: 50px;
 }
 
+
+
 .map-container {
   position: relative;
   overflow: hidden;
@@ -85,10 +101,17 @@ p {
   border: 0;
 }
 
-.container-items {
+//se aca se modifica la seccion productos para hacer una tienda 
+
+@mixin contenedor {
   display: flex;
   flex-wrap: wrap;
 }
+
+.container-items {
+  @include contenedor()
+}
+
 
 .tarjeta:hover {
   box-shadow: 0px 0px 0px 0.5px;
@@ -102,29 +125,29 @@ p {
   width: 400px !important;
   border-radius: 10px;
 }
-
-.detalle {
+.detalle{
   width: fit-content;
 }
-
-.size-fijo {
-  width: 1200px !important;
-  margin: auto;
-  justify-content: flex-start !important;
+.size-fijo{
+  width: 1200px !important; 
+  margin:auto;
+  justify-content: flex-start !important; 
+ 
 }
 
-.dista {
+.dista{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.texto-horizontal {
+.texto-horizontal{
   white-space: nowrap;
 }
 
-.limite {
+@mixin perimetro {
   width: 100px;
   height: 100px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.limite {
+  @include perimetro()
+}
