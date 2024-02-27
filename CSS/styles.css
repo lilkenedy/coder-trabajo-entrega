@@ -1,9 +1,7 @@
 .logo {
   width: 90px;
-  /* Ajusta el tamaño del logo al contenedor redondo */
   height: auto;
   border-radius: 50%;
-  /* Hace que la imagen dentro del contenedor sea redonda también */
 }
 
 header {
@@ -11,7 +9,7 @@ header {
 }
 
 .nav-link:hover {
-  color: blue
+  color: blue;
 }
 
 .carousel-item img {
@@ -38,10 +36,6 @@ header {
     display: block !important;
   }
 }
-
-
-
-
 .centrado-only {
   width: fit-content;
   margin: auto !important;
@@ -52,7 +46,6 @@ header {
     display: flex !important;
   }
 }
-
 .margen-card {
   margin: 20px;
 }
@@ -60,23 +53,22 @@ header {
 p {
   margin-bottom: 0 !important;
 }
-.size-img-card{
+
+.size-img-card {
   height: 200px;
   width: 100%;
 }
 
-.card-flex-content{
+.card-flex-content {
   flex: 1 !important;
   box-sizing: border-box !important;
   display: flex !important;
 }
 
-.bg-arrow{
+.bg-arrow {
   background-color: #000;
   border-radius: 50px;
 }
-
-
 
 .map-container {
   position: relative;
@@ -92,3 +84,47 @@ p {
   height: 100%;
   border: 0;
 }
+
+.container-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tarjeta:hover {
+  box-shadow: 0px 0px 0px 0.5px;
+}
+
+.tarjeta {
+  padding: 20px;
+  margin: 20px;
+  flex: 1;
+  box-sizing: border-box;
+  width: 400px !important;
+  border-radius: 10px;
+}
+
+.detalle {
+  width: fit-content;
+}
+
+.size-fijo {
+  width: 1200px !important;
+  margin: auto;
+  justify-content: flex-start !important;
+}
+
+.dista {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.texto-horizontal {
+  white-space: nowrap;
+}
+
+.limite {
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=styles.css.map */

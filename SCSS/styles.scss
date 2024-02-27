@@ -1,0 +1,153 @@
+// Definición de variables
+$color-primary: #ffc107;
+$color-hover: blue;
+
+// Estilos para el logo
+.logo {
+  width: 90px;
+  height: auto;
+  border-radius: 50%; // Ajusta el tamaño del logo al contenedor redondo
+}
+
+// Estilos para el encabezado
+header {
+  background-color: $color-primary;
+}
+
+// Estilos para los enlaces de navegación al pasar el ratón por encima
+.nav-link {
+  &:hover {
+    color: $color-hover;
+  }
+}
+
+.carousel-item img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nosotros {
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.side-img-gatito {
+  height: 500px !important;
+  width: 100%;
+}
+
+/* clases de mobile van aca*/
+@media (max-width: 1024px) {
+  .direccion-responsive {
+    display: block !important;
+  }
+}
+
+
+
+
+.centrado-only {
+  width: fit-content;
+  margin: auto !important;
+}
+
+@media (min-width: 1024px) {
+  .direccion-responsive {
+    display: flex !important;
+  }
+}
+
+.margen-card {
+  margin: 20px;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.size-img-card {
+  height: 200px;
+  width: 100%;
+}
+
+.card-flex-content {
+  flex: 1 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+}
+
+.bg-arrow {
+  background-color: #000;
+  border-radius: 50px;
+}
+
+
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+//se aca se modifica la seccion productos para hacer una tienda 
+
+@mixin contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-items {
+  @include contenedor()
+}
+
+
+.tarjeta:hover {
+  box-shadow: 0px 0px 0px 0.5px;
+}
+
+.tarjeta {
+  padding: 20px;
+  margin: 20px;
+  flex: 1;
+  box-sizing: border-box;
+  width: 400px !important;
+  border-radius: 10px;
+}
+.detalle{
+  width: fit-content;
+}
+.size-fijo{
+  width: 1200px !important; 
+  margin:auto;
+  justify-content: flex-start !important; 
+ 
+}
+
+.dista{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.texto-horizontal{
+  white-space: nowrap;
+}
+
+@mixin perimetro {
+  width: 100px;
+  height: 100px;
+}
+
+.limite {
+  @include perimetro()
+}
